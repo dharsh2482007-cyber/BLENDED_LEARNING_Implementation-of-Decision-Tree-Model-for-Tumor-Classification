@@ -54,14 +54,14 @@ grid_search=GridSearchCV(svm,param_grid,cv=5,scoring='accuracy')
 grid_search.fit(X_train,y_train)
 best_model=grid_search.best_estimator_
 
-print("Name: KRITHIKAA P")
-print("Register Number:212225040193")
+print("Name: PRIYADHARSHINI")
+print("Register Number:212225220076")
 print("Best Parameters:",grid_search.best_params_)
 
 y_pred=best_model.predict(X_test)
 accuracy=accuracy_score(y_test,y_pred)
-print("Name: KRITHIKAA P")
-print("Register Number:212225040193")
+print("Name: P.PRIYADHARSHINI")
+print("Register Number:212225220076")
 print("Accuracy:",accuracy)
 print("Classification Report:\n",classification_report(y_test,y_pred))
 
